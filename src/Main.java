@@ -20,4 +20,20 @@ public class Main {
         }
         System.out.println("Сумма трат за месяц составила " + summa + " рублей.");
     }
-}
+    public static void task2() {
+        int[] arr = generateRandomArray();
+        int minArr = -1;
+        int maxArr = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxArr) {
+                maxArr = arr[i];
+            }
+            if (arr[i] < minArr) {
+                minArr = arr[i];
+            }
+            }
+        System.out.println("Минимальная сумма трат за день составила " + minArr + " рублей. Максимальная сумма трат за день составила " + maxArr + " рублей.");
+    }
+
+
+    }
