@@ -19,6 +19,7 @@ public class Main {
             summa = summa + arr[i];
         }
         System.out.println("Сумма трат за месяц составила " + summa + " рублей.");
+        System.out.println("Средняя сумма трат за месяц составила " + summa/30 + " рублей.");
     }
     public static void task2() {
         int[] arr = generateRandomArray();
@@ -34,6 +35,15 @@ public class Main {
             }
         System.out.println("Минимальная сумма трат за день составила " + minArr + " рублей. Максимальная сумма трат за день составила " + maxArr + " рублей.");
     }
-
+    public static void task3() {
+        int [] arr = generateRandomArray();
+        int summa = 0;
+        int summaMiddle = 0;
+        for (int i = 0; i < arr.length; i++) {
+            summa = summa + arr[i];
+            summaMiddle = summa/30;
+        }
+        System.out.println("Средняя сумма трат за месяц составила " + summaMiddle + " рублей.");
+    }
 
     }
