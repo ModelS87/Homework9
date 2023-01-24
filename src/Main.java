@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
+        task3();
+        task4();
     }
 
     public static int[] generateRandomArray() {
@@ -24,8 +27,8 @@ public class Main {
 
     public static void task2 () {
         int[] arr = generateRandomArray();
-        int minArr = -1;
-        int maxArr = -1;
+        int minArr = 0;
+        int maxArr = 0;
         for (int i2 = 0; i2 < arr.length; i2++) {
             if (arr[i2] > maxArr) {
                 maxArr = arr[i2];
@@ -51,7 +54,7 @@ public class Main {
     public static void task4() {
         char[] reverseFullName = {'n','a','v','I',' ','v','o','n','a','v','I'};
         for (int i = reverseFullName.length-1; i >-1; i--) {
-            System.out.println(reverseFullName[i]);
+            System.out.print(reverseFullName[i]);
         }
     }
 }
